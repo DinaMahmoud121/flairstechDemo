@@ -1,0 +1,22 @@
+version: '1'
+
+services:
+  app:
+    image: 'ghusta/postgres-world-db'
+    build:
+      context: .
+    container_name: flairstechdemo
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:12122/world-db
+      - SPRING_DATASOURCE_USERNAME=world
+      - SPRING_DATASOURCE_PASSWORD=world123
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+          
+  db:
+    image: 'ghusta/postgres-world-db'
+    container_name: world
+    environment:
+      - POSTGRES_USER=world
+      - POSTGRES_PASSWORD=world123
