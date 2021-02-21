@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: flairstechdemo
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: dinadn
+Implementation-Vendor-Id: com.flairstech
+Build-Jdk: 1.8.0_121
+Implementation-URL: https://spring.io/projects/spring-boot/flairstechd
+ emo
+Created-By: Maven Integration for Eclipse
+
